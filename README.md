@@ -13,8 +13,8 @@ config/
 
 // FEATURE BASED ARCHITECTURE
 -flights
-/ models
-/controllers
+-/ models
+-/controllers
 -search
-/ models
-/ controller
+-/ models
+-/ controller
