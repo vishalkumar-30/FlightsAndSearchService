@@ -55,6 +55,4 @@ config/
 - A city has many airports but one airport belongs to a city
 - One airport can have many flights, but a flight belongs to one airport
 
-![Flight Search Database](<asset\Blank diagram.jpeg>)
 ![Blank diagram](https://github.com/vishalkumar-30/FlightsAndSearchService/assets/102590210/23852bc7-2bd2-427b-b655-8f13faf4e674)
-
