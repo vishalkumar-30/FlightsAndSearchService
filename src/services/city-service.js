@@ -7,6 +7,12 @@ class CityService {
 
   async createCity(data) {
     try {
+      // Validate input data
+      if (!data.name) {
+        throw new Error("City name is required");
+      }
+
+      // Create city entity
       const city = await this.cityRepository.createCity(data);
       return city;
     } catch (error) {
@@ -45,3 +51,5 @@ class CityService {
     }
   }
 }
+
+module.exports = CityService;
