@@ -56,3 +56,16 @@ config/
 - One airport can have many flights, but a flight belongs to one airport
 
 ![Blank diagram](https://github.com/vishalkumar-30/FlightsAndSearchService/assets/102590210/23852bc7-2bd2-427b-b655-8f13faf4e674)
+
+## Tables
+
+### City -> id, name, created_at, updated_at
+
+### Airport -> id, name, address, city_id, created_at, updated_at
+
+    Relationship -> City has many airports and Airport belongs to a city (one to many)
+
+```
+npx sequelize model:generate --name Airport --attributes name:String,address:String,cityId:integer
+
+```
