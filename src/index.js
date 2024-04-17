@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const { PORT } = require("./config/serverConfig");
 const ApiRoutes = require("./routes/index");
 
-// const { Airport, City } = require("./models/index");
+// const { Airport, City, Airplane } = require("./models/index");
 // const city = require("./models/city");
 const db = require("./models/index");
 // const sequelize = require("sequelize");
@@ -23,6 +23,9 @@ const setupAndStartServer = async () => {
     if (process.env.SYNC_DB) {
       db.sequelize.sync({ alter: true });
     }
+    // await Airplane.create({
+    //   modelNumber: 'Bombardier CRJ'
+    // })
 
     // const city = await City.findOne({
     //   where: {
