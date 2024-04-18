@@ -22,8 +22,13 @@ class flightService{
             throw{error};
         }
     }
-    async getFlightsData(){
-        //tido
+    async getAllFlightsData(){
+        try {
+            const flights = await this.flightRepository.getAllFlight(data);
+            return flights;
+        } catch (error) {
+            
+        }
     }
 }
 
